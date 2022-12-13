@@ -1,0 +1,46 @@
+#tree-container{
+    height: 100%;
+    width: 100%;
+}
+
+/* .node {
+  cursor: pointer;
+}
+
+.overlay {
+  background-color: #2222;
+  background-image: url("https://assets.codepen.io/17119/wolves.svg");
+}
+
+.node circle {
+  fill: #fff;
+  stroke: #39b70e;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.templink {
+  fill: none;
+  stroke: red;
+  stroke-width: 3px;
+}
+
+.ghostCircle.show {
+  display: block;
+}
+
+.ghostCircle,
+.activeDrag .ghostCircle {
+  display: none;
+} */
+
