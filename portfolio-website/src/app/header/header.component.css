@@ -1,0 +1,126 @@
+.header {
+  /* height: 50px; */
+  background: #039be5;
+  /* padding: 3px 5px; */
+  /* position: relative; */
+}
+
+nav {
+  position: relative;
+}
+
+.hr-animate {
+  position: relative;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	/* background: linear-gradient(to right, #ffffff, #595959, #1e1e1e, #656565); */
+
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 1px;
+    /* width: 100%; */
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: 0.5;
+    border: 0;
+ }
+ @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* hr {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 0.5px;
+height: 1px;
+  border: none;
+  border-radius: 0px;
+
+  animation: KITTAnim 4s infinite ease-in-out alternate;
+} */
+
+/**
+      Keyframes
+  Do not try at home
+  
+  **/
+
+@keyframes KITTAnim {
+  /* 0% {
+    background-color: #300000;
+  }
+  10% {
+    background-color: #300000;
+  }
+  20% {
+    background-color: #300000;
+  }
+  30% {
+    background-color: #300000;
+  }
+  40% {
+    background-color: #300000;
+  }
+  50% {
+    background-color: #600000;
+  }
+  60% {
+    background-color: #a00000;
+  }
+  70% {
+    background-color: #c00000;
+  }
+  80% {
+    background-color: #f00000;
+  }
+  90% {
+    background-color: #c00000;
+  }
+  100% {
+    background-color: #c00000;
+  } */
+
+  0% {background-color: rgb(78, 78, 78);}
+  50% {background-color: #dddddd;}
+  100% {background-color: rgb(36, 36, 36);}
+}
+
+ul {
+  /* position: absolute; */
+  /* top:40%;
+    left:40%; */
+  display: flex;
+  /* center elements */
+    justify-content: center;
+    box-sizing: border-box;
+    /* margin: 10px 40px; */
+
+}
+li{
+    padding: 10px 50px;
+}
+ul li {
+  /* list-style: none; */
+
+  /* position: relative; */
+  display: block;
+  
+}
+ul:hover li  {
+  opacity: 0.2;
+  filter: blur(2px);
+}
+
+
+  
+ul li:hover {
+  opacity: 1;
+  filter: blur(0px);
+}

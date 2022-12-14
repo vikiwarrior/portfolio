@@ -1,46 +1,104 @@
-#tree-container{
+.top {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: MyFont;
+    color: #dddddd;
+    margin: 32px;
+    padding: 0;
+  }
+  
+  /* .bottom-left {
+    font-size: 10px;
+    font-family: MyFont;
+    color: #dddddd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 50px;
+    text-align: center;
+  }
+  .bottom-right {
+    font-size: 10px;
+    font-family: MyFont;
+    color: #dddddd;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+    text-align: center;
+  } */
+  
+  .instructions{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    /* align-items: ;  */
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 10px;
+  }
+  .overlay {
     height: 100%;
     width: 100%;
-}
-
-/* .node {
-  cursor: pointer;
-}
-
-.overlay {
-  background-color: #2222;
-  background-image: url("https://assets.codepen.io/17119/wolves.svg");
-}
-
-.node circle {
-  fill: #fff;
-  stroke: #39b70e;
-  stroke-width: 1.5px;
-}
-
-.node text {
-  font-size: 10px;
-  font-family: sans-serif;
-}
-
-.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 1.5px;
-}
-
-.templink {
-  fill: none;
-  stroke: red;
-  stroke-width: 3px;
-}
-
-.ghostCircle.show {
-  display: block;
-}
-
-.ghostCircle,
-.activeDrag .ghostCircle {
-  display: none;
-} */
-
+  }
+  
+  #tree-container {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: MyFont;
+    color: #dddddd;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .italics {
+    font-family: MyFontItalics;
+  }
+  
+  
+  .content {
+    flex: 1;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .footer {
+    height: 50px;
+    /* background: blue; */
+    padding: 3px 5px;
+    /* background-image: url("../assets/images/background.png"); */
+    content: "ssss";
+    background-color: #101010;
+  
+    /* do hieght : 300%; below is to test */
+    /* position: absolute;
+  */
+    /* position: relative; */
+    /* left: -100%;
+    top: -100%;
+    background-color: #d4c4c4;
+    animation-name: grained;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(20); */
+  }
+  

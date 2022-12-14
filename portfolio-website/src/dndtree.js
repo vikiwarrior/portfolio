@@ -30,14 +30,13 @@ function createTree() {
                                 { "name": "painting" }
                             ]
                         },
-                        { "name": "painting" }
-                    ]
-                },
-                {
-                    "name": "art",
-                    "children": [
-                        { "name": "design" },
-                        { "name": "painting" }
+                        {
+                            "name": "painting",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        }
                     ]
                 },
                 {
@@ -50,48 +49,91 @@ function createTree() {
                                 { "name": "painting" }
                             ]
                         },
-                        { "name": "painting" }
-                    ]
-                },  {
-                    "name": "art",
-                    "children": [
-                        { "name": "design" },
-                        { "name": "painting" }
-                    ]
-                },
-                {
-                    "name": "sports",
-                    "children": [
                         {
-                            "name": "design",
+                            "name": "painting",
                             "children": [
                                 { "name": "design" },
                                 { "name": "painting" }
                             ]
-                        },
-                        { "name": "painting" }
-                    ]
-                },  {
-                    "name": "art",
-                    "children": [
-                        { "name": "design" },
-                        { "name": "painting" }
-                    ]
-                },
-                {
-                    "name": "sports",
-                    "children": [
-                        {
-                            "name": "design",
-                            "children": [
-                                { "name": "design" },
-                                { "name": "painting" }
-                            ]
-                        },
-                        { "name": "painting" }
+                        }
                     ]
                 }
-                
+                , {
+                    "name": "sports",
+                    "children": [
+                        {
+                            "name": "design",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        },
+                        {
+                            "name": "painting",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "sports",
+                    "children": [
+                        {
+                            "name": "design",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        },
+                        {
+                            "name": "painting",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "sports",
+                    "children": [
+                        {
+                            "name": "design",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        },
+                        {
+                            "name": "painting",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "sports",
+                    "children": [
+                        {
+                            "name": "design",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        },
+                        {
+                            "name": "painting",
+                            "children": [
+                                { "name": "design" },
+                                { "name": "painting" }
+                            ]
+                        }
+                    ]
+                }
             ]
         };
 
@@ -115,10 +157,10 @@ function createTree() {
         var viewerWidth = $(window).width();
         var viewerHeight = $(window).height();
         $(window).resize(function () {
-            // // Do something more useful
+            // Do something more useful
             viewerWidth = $(window).width();
             viewerHeight = $(window).height();
-    
+            console.log('doc height is ' + $(window).height());
         });
 
         var tree = d3.layout.tree()
@@ -187,6 +229,7 @@ function createTree() {
                 svgGroup.transition().attr("transform", "translate(" + translateX + "," + translateY + ")scale(" + scale + ")");
                 d3.select(domNode).select('g.node').attr("transform", "translate(" + translateX + "," + translateY + ")");
                 zoomListener.scale(zoomListener.scale());
+                console.log(scale + "SDFDSFDSF")
                 zoomListener.translate([translateX, translateY]);
                 panTimer = setTimeout(function () {
                     pan(domNode, speed, direction);
@@ -194,9 +237,15 @@ function createTree() {
             }
         }
 
-        // Define the zoom function for the zoomable tree
+        // Define the zoom function for the zoomable tree 
+        function initialZoom() {
+            // scale = 1.5
+            // zoomListener.scale(1.5);
+            // svgGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + scale + ")");
 
+        }
         function zoom() {
+
             svgGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
         }
 
@@ -527,7 +576,8 @@ function createTree() {
 
         // Append a group which holds all nodes and which the zoom Listener can act upon.
         var svgGroup = baseSvg.append("g");
-
+        zoomListener.scale(1.7);
+        console.log(zoomListener.scale() + "SDFDSFDSF")
         // Define the root
         root = treeData;
         root.x0 = viewerHeight / 2;
