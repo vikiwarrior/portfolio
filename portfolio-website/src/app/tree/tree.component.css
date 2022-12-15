@@ -39,7 +39,7 @@
     box-sizing: border-box;
     /* align-items: ;  */
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px clamp(50px, 8%, 200px);
     font-size: 10px;
   }
   .overlay {
@@ -80,25 +80,4 @@
     flex-direction: column;
   }
   
-  
-  .footer {
-    height: 50px;
-    /* background: blue; */
-    padding: 3px 5px;
-    /* background-image: url("../assets/images/background.png"); */
-    content: "ssss";
-    background-color: #101010;
-  
-    /* do hieght : 300%; below is to test */
-    /* position: absolute;
-  */
-    /* position: relative; */
-    /* left: -100%;
-    top: -100%;
-    background-color: #d4c4c4;
-    animation-name: grained;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(20); */
-  }
   

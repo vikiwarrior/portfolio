@@ -15,11 +15,11 @@
 }
 
 
-/* .footer {
-  height: 50px;
+.footer {
+  height: 20px;
   background: blue;
   padding: 3px 5px;
   background-image: url("../assets/images/background.png");
   content: "ssss";
   background-color: #101010;
-} */
+}

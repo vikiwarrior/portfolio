@@ -18,8 +18,9 @@ nav {
 	animation: gradient 5s ease infinite;
 	height: 1px;
     /* width: 100%; */
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left :clamp(50px,8%, 200px);
+    margin-right :clamp(50px, 8%, 200px);
+
     opacity: 0.5;
     border: 0;
  }
@@ -118,6 +119,11 @@ ul:hover li  {
   filter: blur(2px);
 }
 
+a{
+  text-decoration: none;
+  color: #dddddd;
+
+}
 
   
 ul li:hover {
