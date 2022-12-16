@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ParallaxService } from '../services/parallax.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  @ViewChild('elem') elem: ElementRef = {} as ElementRef;
 
+  constructor(private parallaxService: ParallaxService) {}
+
+  ngAfterViewInit() {
+    this.parallaxService.applyParallax(this.elem.nativeElement);
+  }
 }

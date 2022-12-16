@@ -1,3 +1,29 @@
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  /* right: 0;
+  margin-right: 10%; */
+  /* object-fit:none; */
+  background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), 
+  url(https://media.tenor.com/Wx9IEmZZXSoAAAAi/hi.gif)
+  /* url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png) */
+  , url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png);
+  background-size: 50vh auto ,30vh auto,50vh auto;
+  /* background; */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position: 80% 15%,70% 30%,80% 10%;
+  /* overflow: visible; */
+  /* opacity: 0.45; */
+  
+}
+
+
+
+
+
 .row {
   display: flex;
 }
