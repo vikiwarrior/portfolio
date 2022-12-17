@@ -1,4 +1,3 @@
-
 .parallax {
   position: absolute;
   width: 100%;
@@ -6,23 +5,124 @@
   /* right: 0;
   margin-right: 10%; */
   /* object-fit:none; */
-  background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), 
-  url(https://media.tenor.com/Wx9IEmZZXSoAAAAi/hi.gif)
+  background-image: 
+  url("../../assets/images/background_illus1.svg");
+  /* background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), 
+  /* url("../../assets/images/background_illus.svg") */
   /* url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png) */
-  , url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png);
-  background-size: 50vh auto ,30vh auto,50vh auto;
+  /* , url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png); */ 
+  background-size: 40vh  auto;
+  /* rotate: 4deg; */
+  /* transform: rotate(45deg); */
+  animation: shake-lr 17s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  /* background-size: 50vh 60% ,30vh auto,50vh auto; */
   /* background; */
   background-repeat: no-repeat;
+  /* opacity: 0.7; */
   /* background-position: center; */
-  background-position: 80% 15%,70% 30%,80% 10%;
+  /* background-position: 80% 15%,70% 30%,80% 10%; */
+  background-position: 75% 30%
   /* overflow: visible; */
   /* opacity: 0.45; */
   
 }
 
+.circle{
+  position: absolute;
+  /* top: calc(85%);
+  left: calc(95%); */
 
+  /* border-radius: 50%; */
+  background-color: blue;
+  /* animation: scale-in-center 5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate; */
+  /* animation: heartbeat 17s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
+  opacity: 0.5;
+  border-radius: 50%;
+  /* blur: 40px; */
+  /* box-shadow:
+    0 0 calc(1.175*4em) calc(0.738*4em) #fff,
+    0 0 calc(3.125*4em) calc(1.875*4em) #f0f,
+    0 0 calc(4.375*4em) calc(2.813*4em) #0ff; */
+}
+.shadow {
+  position: absolute;
+  /* top: calc(85%);
+  left: calc(95%); */
+  /* height: 20%;
+  width:20%; */
+ 
+  /* border-radius: 50%; */
+  background-color: transparent;
+  /* animation: scale-in-center 5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite alternate; */
+  /* animation: heartbeat 17s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
+  opacity: 0.5;
+  
+  /* blur: 40px; */
+  box-shadow:
+    /* 0 50px calc(1.175*2em) calc(0.738*2em) #fff, */
+    50px 40px calc(3.125*1.5em) calc(1.875*2em) #02dbeb,
+    -30px -40px calc(3.125*2em) calc(1.875*1.5em) #ffc70d;
+    /* 0 0 calc(3.125*2em) calc(1.875*2em) #f0f,
+    0 0 calc(4.375*2em) calc(2.813*2em) #0ff; */
+    /* #02dbeb, #a10ff6, #ffc70d,#fb3232 */
+    
+}
 
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0.9);
+    
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.pulsate{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  animation: heartbeat 8s ease infinite both;
 
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake-lr {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 100% 100%;
+  }
+  10% {
+    transform: rotate(1deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-0deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  90% {
+    transform: rotate(1deg);
+  }
+}
 
 .row {
   display: flex;

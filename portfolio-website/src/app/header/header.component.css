@@ -18,8 +18,8 @@ nav {
 	animation: gradient 5s ease infinite;
 	height: 1px;
     /* width: 100%; */
-    margin-left :clamp(50px,8%, 200px);
-    margin-right :clamp(50px, 8%, 200px);
+    margin-left :clamp(3.125rem,8%, 200px);
+    margin-right :clamp(3.125rem, 8%, 200px);
 
     opacity: 0.5;
     border: 0;
@@ -105,7 +105,7 @@ ul {
 
 }
 li{
-    padding: 10px 50px;
+    padding: 0.625rem 3.125rem;
 }
 ul li {
   /* list-style: none; */
