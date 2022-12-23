@@ -1,16 +1,227 @@
-/* .big{
-    height :2000px;
-    width: 100px;
-    background-color:aqua;
-} */
-.parallax {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: 50% 50%;
-    
+.row {
+  display: flex;
+}
+
+.column-one {
+  flex: 55%;
+  padding: 25vh 10px 0 clamp(50px, 8%, 200px);
+  /* trbl */
+}
+
+.column-one *{
+  position: relative;
+  word-wrap: break-word; /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap;
+}
+
+.top {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  font-family: MyFont;
+  color: #dddddd;
+  margin: 32px;
+  padding: 0;
+}
+
+p {
+  font-size: 1.5em;
+  color: #dddddd;
+  /* margin: 0; */
+
+}
+a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.email:hover {
+  border-bottom: 1px solid #dddddd;
+  text-decoration: none;
+}
+.email {
+  font-size: 2.5em;
+}
+
+ul {
+  padding: 0;
+}
+.social-links {
+  display: flex;
+  /* width: 20%; */
+  flex-wrap: wrap;
+  justify-content: baseline;
+}
+
+.social-links li {
+  display: inline-block;
+  /* flex: 0 0 auto; */
+  /* margin: 0.5em; */
+}
+
+.social-linkks a {
+  /* width: calc(2.5*1.5rem);
+    height: calc(2.5*1.5rem); */
+  width: 100px;
+  height: 100px;
+
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  vertical-align: middle;
+  font-size: 1rem;
+
+  padding: 20px;
+  /* margin: calc(1*1.5rem) calc(1*1.5rem) 0 0; */
+  border-radius: 50%;
+  border: #dddddd 2px solid;
+  /* position: relative;
+    overflow: hidden; */
+  transition: transform 0.5s;
+}
+
+/* @media (max-width: 768px) {
+    .social-links {
+      flex-direction: column;
+    }
+  } */
+
+.social-links {
+  display: flex;
+  /* justify-content: center; */
+}
+.social-links a {
+  display: flex;
+  background: transparent;
+  height: 45px;
+  width: 45px;
+  margin: 0 25px 0 0;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: #dddddd 2px solid;
+  transition: transform 0.5s;
+}
+a i {
+  transition: transform 0.5s;
+}
+a:hover {
+  transform: translateY(2px);
+}
+a:hover i {
+  transform: scale(0.9);
+}
+a:hover .fa-facebook {
+  color: #3b5998;
+}
+a:hover .fa-twitter {
+  color: #00acee;
+}
+a:hover .fa-whatsapp {
+  color: #4fce5d;
+}
+a:hover .fa-instagram {
+  color: #f14843;
+}
+a:hover .fa-youtube {
+  color: #f00;
+}
+
+/* .hero { */
+/* width: 100%; */
+/* height: 100vh; */
+/* background: #f1f9ff; */
+/* display: flex; */
+/* align-items: center; */
+/* flex-direction: column; */
+/* justify-content: center; */
+/* } */
+
+/* .icon-link { */
+
+/* background-color: #666; */
+/* vertical-align: middle; */
+/* display: inline-block; */
+/* cursor: pointer; */
+/* outline: none; */
+/* margin: 5px; */
+/* box-sizing: content-box; */
+/* } */
+/* .social-links { */
+
+/* width: 60px; */
+/* height: 6em; */
+/* background-color: #666; */
+/* line-height: 6em;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block; */
+/* cursor: pointer; */
+/* outline: none; */
+/* margin: 5px; */
+/* box-sizing: content-box; */
+/* display: flex; */
+/* border-radius: 50%; */
+/* width: 60px; */
+/* height: 60px; */
+/* background-color: #666; */
+/* line-height: 60px; */
+/* text-align: center; */
+/* vertical-align: middle; */
+/* display: inline-block; */
+/* cursor: pointer; */
+/* outline: none; */
+/* margin: 5px; */
+/* box-sizing: content-box; */
+/* } */
+
+/* .social-links .fa {
+    color: #fff;
+    line-height: 60px;
+    font-size: 4px;
+  } */
+
+/* .brand-icons {
+    background-color: #ddd;
+    padding: 10px 0;
+  } 
+
+   */
+
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
   }
-  
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
+
+/* 
+
+
+
+
+
+  .p-name2 {
+  font-size: 4rem;
+  margin-left: 3px;
+  margin: 0.2em 0 0.5em 0;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  background: linear-gradient(-45deg, #02dbeb, #a10ff6, #ffc70d, #fb3232);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 3s ease-in-out infinite;
+  -moz-animation: animated_text 3s ease-in-out infinite;
+  -webkit-animation: animated_text 3s ease-in-out infinite;
+} */
