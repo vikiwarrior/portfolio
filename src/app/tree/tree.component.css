@@ -14,30 +14,10 @@
 
  .em{
   position: relative;
-    /* text-decoration: none; */
     color: #dddddd;
     z-index: 999;
   }
-  /* .bottom-left {
-    font-size: 10px;
-    font-family: MyFont;
-    color: #dddddd;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 50px;
-    text-align: center;
-  }
-  .bottom-right {
-    font-size: 10px;
-    font-family: MyFont;
-    color: #dddddd;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 50px;
-    text-align: center;
-  } */
+
   
   .instructions{
     position: absolute;
@@ -45,7 +25,6 @@
     display: flex;
     width: 100%;
     box-sizing: border-box;
-    /* align-items: ;  */
     justify-content: space-between;
     padding: 10px clamp(50px, 8%, 200px);
     font-size: 10px;

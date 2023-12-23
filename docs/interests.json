@@ -1,0 +1,126 @@
+{
+    "name": "interests",
+    "children": [
+        {
+            "name": "art",
+            "children": [
+                { "name": "design" },
+                { "name": "painting" }
+            ]
+        },
+        {
+            "name": "sports",
+            "children": [
+                {
+                    "name": "design",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                },
+                {
+                    "name": "painting",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "sports",
+            "children": [
+                {
+                    "name": "design",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                },
+                {
+                    "name": "painting",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                }
+            ]
+        }
+        , {
+            "name": "sports",
+            "children": [
+                {
+                    "name": "design",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                },
+                {
+                    "name": "painting",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "sports",
+            "children": [
+                {
+                    "name": "design",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                },
+                {
+                    "name": "painting",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "sports",
+            "children": [
+                {
+                    "name": "design",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                },
+                {
+                    "name": "painting",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "sports",
+            "children": [
+                {
+                    "name": "design",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                },
+                {
+                    "name": "painting",
+                    "children": [
+                        { "name": "design" },
+                        { "name": "painting" }
+                    ]
+                }
+            ]
+        }
+    ]
+}
